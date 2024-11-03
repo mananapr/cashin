@@ -1,0 +1,11 @@
+cashin_pb/pb_data/*.db
+cashin_pb/pb_data/*.ts
+cashin_pb/pb_data/backups
+cashin_pb/pb_data/storage
+cashin_pb/pb_public/assets
+cashin_pb/pb_public/index.html
+cashin_pb/pb_public/favicon.ico
+cashin_pb/pocketbase
+cashin_vue/dist
+cashin_vue/node_modules
+Makefile.inc
