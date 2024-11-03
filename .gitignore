@@ -1,4 +1,6 @@
 cashin_pb/pb_data/*.db
+cashin_pb/pb_data/*.db-shm
+cashin_pb/pb_data/*.db-wal
 cashin_pb/pb_data/*.ts
 cashin_pb/pb_data/backups
 cashin_pb/pb_data/storage
