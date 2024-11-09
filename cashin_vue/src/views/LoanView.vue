@@ -8,8 +8,8 @@
       class="inline-flex items-center space-x-1 md:space-x-2 md:ml-17 rtl:space-x-reverse"
     >
       <li class="inline-flex items-center">
-        <a
-          href="/"
+        <RouterLink
+          to="/"
           class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
         >
           <svg
@@ -24,7 +24,7 @@
             />
           </svg>
           Home
-        </a>
+        </RouterLink>
       </li>
       <li aria-current="page">
         <div class="flex items-center">

@@ -19,8 +19,8 @@
           <div
             class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
           >
-            <a
-              href="/cards"
+            <RouterLink
+              to="/cards"
               class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Get started
@@ -39,7 +39,7 @@
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </a>
+            </RouterLink>
             <a
               href="#info"
               class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
@@ -94,8 +94,8 @@
                 Get a Credit Card that suits you the best & make up to Rs. 2.5k
                 on getting a new card!
               </p>
-              <a
-                href="/cards"
+              <RouterLink
+                to="/cards"
                 class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
                 >Lets Go!
                 <svg
@@ -113,7 +113,7 @@
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </RouterLink>
             </div>
             <div
               class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12"
@@ -150,8 +150,8 @@
                 Apply Through Cashin For The Best Deal On The Loan Of Your
                 Choice, Get Rewards Worth Up To Rs. 20k!
               </p>
-              <a
-                href="/loans"
+              <RouterLink
+                to="/loans"
                 class="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
                 >Get Started!
                 <svg
@@ -169,7 +169,7 @@
                     d="M1 5h12m0 0L9 1m4 4L9 9"
                   />
                 </svg>
-              </a>
+              </RouterLink>
             </div>
           </div>
 

@@ -3,12 +3,12 @@
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0 lg:w-2/3">
-          <a href="https://cashin.club" class="flex items-center">
+          <RouterLink to="/" class="flex items-center">
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
               >cashin.club</span
             >
-          </a>
+          </RouterLink>
           <br />
           <p>
             Cashin is a financial services marketplace aimed at bringing you the
@@ -56,8 +56,8 @@
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
           >© 2024
-          <a href="https://cashin.club/" class="hover:underline"
-            >Cashin.club™</a
+          <RouterLink to="/" class="hover:underline"
+            >Cashin.club™</RouterLink
           >. All Rights Reserved.
         </span>
       </div>
