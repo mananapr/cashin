@@ -4,6 +4,8 @@ import CardView from '../views/CardView.vue'
 import LoanView from '../views/LoanView.vue'
 import ProductView from '../views/ProductView.vue'
 import ApplicationsView from '../views/ApplicationsView.vue'
+import PrivacyPolicyView from '../views/PrivacyPolicyView.vue'
+import TermsView from '../views/TermsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,16 @@ const router = createRouter({
       path: '/applications',
       name: 'applications',
       component: ApplicationsView,
+    },
+    {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: PrivacyPolicyView,
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: TermsView,
     },
   ],
 })
