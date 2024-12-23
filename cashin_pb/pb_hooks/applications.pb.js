@@ -93,5 +93,27 @@ Team Cashin
 		})
 		$app.newMailClient().send(message)
 		// TODO: Integrate with some API for generating gift card
+	} else if (application.status == "In Process") {
+		const user = getUserById(application.user_id)
+		const product = getProductById(application.product_id)
+		const message = new MailerMessage({
+			from: {
+				address: $app.settings().meta.senderAddress,
+				name: $app.settings().meta.senderName,
+			},
+			to: [{ address: user.email }],
+			bcc: [{ address: "manans@tutanota.com", address: "buzo.1411@gmail.com" }],
+			subject: "Your Application is In Process!",
+			html: `
+Hi ${user.name},
+<br><br>
+We are delighted to inform you that your application for <strong>${product.name}</strong> with application ID <strong>${application.app_id}</strong> is in process!
+<br><br>
+Thank you,
+<br>
+Team Cashin
+`,
+		})
+		$app.newMailClient().send(message)
 	}
 }, "applications")
