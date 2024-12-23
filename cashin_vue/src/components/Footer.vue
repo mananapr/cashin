@@ -27,10 +27,10 @@
             </h2>
             <ul class="text-gray-500 dark:text-gray-400 font-medium">
               <li class="mb-4">
-                <a href="#" class="hover:underline">Terms and Conditions</a>
+                <RouterLink to="/terms">Terms and Conditions</RouterLink>
               </li>
               <li>
-                <a href="#" class="hover:underline">Privacy Policy</a>
+                <RouterLink to="/privacy-policy" class="hover:underline">Privacy Policy</RouterLink>
               </li>
             </ul>
           </div>
